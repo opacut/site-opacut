@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/opacut-github.io/static/css/main.7fd31a2d.css",
-    "main.js": "/opacut-github.io/static/js/main.e270d81a.js",
-    "index.html": "/opacut-github.io/index.html",
-    "main.7fd31a2d.css.map": "/opacut-github.io/static/css/main.7fd31a2d.css.map",
-    "main.e270d81a.js.map": "/opacut-github.io/static/js/main.e270d81a.js.map"
+    "main.css": "/static/css/main.7fd31a2d.css",
+    "main.js": "/static/js/main.e270d81a.js",
+    "index.html": "/index.html",
+    "main.7fd31a2d.css.map": "/static/css/main.7fd31a2d.css.map",
+    "main.e270d81a.js.map": "/static/js/main.e270d81a.js.map"
   },
   "entrypoints": [
     "static/css/main.7fd31a2d.css",
