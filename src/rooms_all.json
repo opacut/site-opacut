@@ -1,0 +1,275 @@
+[
+    {
+        "id": 1,
+        "name": "Central Room",
+        "image": "/images/rooms/central_room.png",
+        "color": "Blue",
+        "description": "Room in which all the characters start the game. <i>Only the actions <b>Look</b> and <b>Move</b> are allowed."
+    },
+    {
+        "id": 2,
+        "name": "Room 25",
+        "image": "/images/rooms/room_25.png",
+        "color": "Blue",
+        "description": "Exit room prisoners have to reach and move out of the Complex before the end of the countdown."
+    },
+    {
+        "id": 3,
+        "name": "Empty Chamber",
+        "image": "/images/rooms/empty_chamber.png",
+        "color": "Green",
+        "description": "No effect."
+    },
+    {
+        "id": 4,
+        "name": "Vision Chamber",
+        "image": "/images/rooms/vision_chamber.png",
+        "color": "Green",
+        "description": "Look secretly at any room on the board, then place it back where it was."
+    },
+    {
+        "id": 5,
+        "name": "Moving Chamber",
+        "image": "/images/rooms/moving_chamber.png",
+        "color": "Green",
+        "description": "Exchange this room and all its occupants with any hidden room on the board."
+    },
+    {
+        "id": 6,
+        "name": "Control Chamber",
+        "image": "/images/rooms/control_chamber.png",
+        "color": "Green",
+        "description":"Slide any non-central line of the Complex one rank in the direction of your choice."
+    },
+    {
+        "id": 7,
+        "name": "Tunnel Chamber",
+        "image": "/images/rooms/tunnel_chamber.png",
+        "color": "Green",
+        "description":"Immediately move your character to another visible Tunnel chamber of your choice (if any)."
+    },
+    {
+        "id": 8,
+        "name": "Vortex Room",
+        "image": "/images/rooms/vortex_room.png",
+        "color": "Yellow",
+        "description":"Take your character figurine and place it on the Central room."
+    },
+    {
+        "id": 9,
+        "name": "Prison Cell",
+        "image": "/images/rooms/prison_cell.png",
+        "color": "Yellow",
+        "description":"You can only leave the Prison Cell by moving into an occupied adjacent room or to the Central Room, if it is adjacent."
+    },
+    {
+        "id": 10,
+        "name": "Dark Chamber",
+        "image": "/images/rooms/dark_chamber.png",
+        "color": "Yellow",
+        "description":"While you're in this room, you can't use the <b>Look</b> action."
+    },
+    {
+        "id": 11,
+        "name": "Cold Chamber",
+        "image": "/images/rooms/cold_chamber.png",
+        "color": "Yellow",
+        "description":"If you are in this room when programming, you can only program one action. Also applies to a revealed guard."
+    },
+    {
+        "id": 12,
+        "name": "Acid Bath",
+        "image": "/images/rooms/acid_bath.png",
+        "color": "Red",
+        "description":"As soon as two chracters are in this room, the one who entered earlier is eliminated by the arrival of the second one."
+    },
+    {
+        "id": 13,
+        "name": "Flooded Chamber",
+        "image": "/images/rooms/flooded_chamber.png",
+        "color": "Red",
+        "description":"Once revealed, it becomes inaccessible till the end of game. If your character is still in it at the end of your next turn, she is eliminated."
+    },
+    {
+        "id": 14,
+        "name": "Trapped Chamber",
+        "image": "/images/rooms/trapped_chamber.png",
+        "color": "Red",
+        "description":"If your character is still in it at the end of your next action, she is eliminated."
+    },
+    {
+        "id": 15,
+        "name": "Illusion Chamber",
+        "image": "/images/rooms/illusion_chamber.png",
+        "color": "Red",
+        "description":"Immediately exchange the illusion room with any hidden room on the board. Reveal the new room, place your character in it and apply its effect."
+    },
+    {
+        "id": 16,
+        "name": "Mortal Chamber",
+        "image": "/images/rooms/mortal_chamber.png",
+        "color": "Red",
+        "description":"When your character enters this room, she is instantly eliminated."
+    },
+    {
+        "id": 17,
+        "name": "Key Room",
+        "image": "/images/rooms/key_room.png",
+        "color": "Blue",
+        "description":"<i>Only used for Solo and Cooperation modes.</i><br>Once activated, it is destroyed. Now the chracters can leave the Complex."
+    },
+    {
+        "id": 18,
+        "name": "Robot Room",
+        "image": "/images/rooms/robot_room.png",
+        "color": "Green",
+        "description":"<i>Place a robot in this room when it is revealed.</i><br><br>When you enter the Robot room, perform the following actions: <ul><li>Place a robot here if there are none in the complex</li><li>Order any robot to Move or Push someone.</li></ul>"
+    },
+    {
+        "id": 19,
+        "name": "Regeneration Room",
+        "image": "/images/rooms/regeneration_room.png",
+        "color": "Green",
+        "description":"All eliminated characters return to play in the Central room and can act normally next turn. Once this occurs, this room is destroyed."
+    },
+    {
+        "id": 20,
+        "name": "Pivoting Room",
+        "image": "/images/rooms/pivoting_room.png",
+        "color": "Yellow",
+        "description":"<i>Always direct the bridge at the last player who entered.</i><br>This room has only 2 exits. You can only Look, Move, Push, or use your special ability in those directions."
+    },
+    {
+        "id": 21,
+        "name": "Jamming Room",
+        "image": "/images/rooms/jamming_room.png",
+        "color": "Yellow",
+        "description":"As long as a character is in the Jamming room, no information can be conveyed between the players, regardless of their role."
+    },
+    {
+        "id": 22,
+        "name": "M.A.C. Room",
+        "image": "/images/rooms/mac_room.png",
+        "color": "Yellow",
+        "description":"Draw an M.A.C. card and apply its effect immediately. Regardless of who the card normally targets, apply its effects to your character instead."
+    },
+    {
+        "id": 23,
+        "name": "Mirror Room",
+        "image": "/images/rooms/mirror_room.png",
+        "color": "Yellow",
+        "description":"When you enter, you immediately lose your Adrenaline token and any remaining programmed actions."
+    },
+    {
+        "id": 24,
+        "name": "Paranoia Room",
+        "image": "/images/rooms/paranoia_room.png",
+        "color": "Red",
+        "description":"Shuffle your Action tokens into a pile. Instead of programming your actions, draw and play an action from this pile. Adrenaline still functions as normal. If you exit the room or deplete your draw pile, you may program normally."
+    },
+    {
+        "id": 25,
+        "name": "Time Room",
+        "image": "/images/rooms/timer_room.png",
+        "color": "Red",
+        "description":"Reduce the countdown by one turn, except during the last round. During the last round, the Timer room eliminates the character who enters it. In both cases, the room is then destroyed."
+    },
+    {
+        "id": 26,
+        "name": "Shredder Room",
+        "image": "/images/rooms/shredder_room.png",
+        "color": "Red",
+        "description":"As soon as a character exits this room or a robot enters it, this room becomes inaccessible and any characters still inside are eliminated."
+    },
+    {
+        "id": 27,
+        "name": "Ephemeral Room",
+        "image": "/images/rooms/ephemeral_room.png",
+        "color": "Green",
+        "description":"As soon as a character moves out of this room, if no other character is still present in the room, the outgoing character applies the Transformation effect on the room.<br><br><b><i>Additional effect for Escape Room or Puzzle Mode</i></b><br><br>As soon as one character enters an Ephemeral room, they immediately draw an Enigma/Puzzle card. If other characters then return in the room, the don't draw anything."
+    },
+    {
+        "id": 28,
+        "name": "Treatment Room",
+        "image": "/images/rooms/treatment_room.png",
+        "color": "Green",
+        "description":"Get your Adrenaline token or one Action token back if you had lost one (for example due to a Punishment MAC card)."
+    },
+    {
+        "id": 29,
+        "name": "Hacking Room",
+        "image": "/images/rooms/hacking_room.png",
+        "color": "Green",
+        "description":"Exchange 2 non-blue rooms or hidden rooms adjacent to this room."
+    },
+    {
+        "id": 30,
+        "name": "Fake Exit",
+        "image": "/images/rooms/fake_exit.png",
+        "color": "Yellow",
+        "description":"If possible, take a character from an adjacent room and place it with you in this room. This new character does not trigger the effect of the Fake Exit."
+    },
+    {
+        "id": 31,
+        "name": "Hypnosis Chamber",
+        "image": "/images/rooms/hypnosis_chamber.png",
+        "color": "Yellow",
+        "description":"You cannot program a <b>MOVE</b> action while in this room. You can only leave the room with your Adrenaline token, outside help or, for some, your special ability."
+    },
+    {
+        "id": 32,
+        "name": "Secret Code Rooms (x 4)",
+        "image": "/images/rooms/secret_code_rooms.png",
+        "color": "Blue",
+        "description":"<b><i>Only in Escape Room or Puzzle Modes</i></b><br>Players cannot escape the complex until all four Secret Code rooms have been activated.<br><br>There are 4 different blue rooms, each with a combination of 3 letters, 3 digits, 4 letters or 4 digits."
+    },
+    {
+        "id": 33,
+        "name": "Menace Room",
+        "image": "/images/rooms/menace_room.png",
+        "color": "Red",
+        "description":"Harmelss until ROOM 25 is visible. This room has the same effect as the Mortal Chamber when ROOM 25 is revealed. Everyone in this room is immediately eliminated."
+    },
+    {
+        "id": 34,
+        "name": "Fragile Room",
+        "image": "/images/rooms/fragile_room.png",
+        "color": "Red",
+        "description":"If the line or column of this room is moved, everyone in this room is immediately eliminated. Place a <b>DO NOT CROSS</b> marker on this room, which is now inaccessible."
+    },
+    {
+        "id": 35,
+        "name": "Revelation Room",
+        "image": "/images/rooms/revelation_room.png",
+        "color": "Green",
+        "description":"Secretly look at 2 rooms adjacent to this room."
+    },
+    {
+        "id": 36,
+        "name": "Chaos Room",
+        "image": "/images/rooms/chaos_room.png",
+        "color": "Yellow",
+        "description":"Swap 1 adjacent and non-blue room with a yellow or red room in the complex. Those two rooms must be empty. If there is no empty yellow or red room in the complex, this room has no effect."
+    },
+    {
+        "id": 37,
+        "name": "Black Out Room",
+        "image": "/images/rooms/black_out_room.png",
+        "color": "Yellow",
+        "description":"The green rooms do not trigger their effects as long as this room is occupied."
+    },
+    {
+        "id": 38,
+        "name": "Reset Chamber",
+        "image": "/images/rooms/reset_chamber.png",
+        "color": "Yellow",
+        "description":"All unoccupied rooms (by a character or a robot) and not blocked (with a DO NOT CROSS token) are flipped face down."
+    },
+    {
+        "id": 39,
+        "name": "Russian Roulette",
+        "image": "/images/rooms/russian_roulette.png",
+        "color": "Red",
+        "description":"When the Roulette Room is revealed, place the 6 Bullet tokens face down on it. Whenever a character enters, each character in the room draws a Roulette token. A character who draws the DEATH token is immediately eliminated and the roulette is reset."
+    }
+]

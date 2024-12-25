@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "name": "Alice",
+      "image": "images/characters/alice.png",
+      "ability_image": "images/abilities/alice.png",
+      "ability_name": "Be Hidden",
+      "ability_description": "<p style='color:violet;'><i>At the beginning of the game, Alice receives her \"Hidden\" token (with a plastic base).</i></p>Alice disappears until her next action, regardless of when it occurs. During this time, replace her figurine with her “hidden” token. A hidden character cannot be pushed, carried, or called. Her room is still considered occupied, and the effects of this room will be applied normally (Acid Bath, Shredder Room, Flooded Chamber, etc… ) The character becomes visible as soon as she takes an action. Replace her “hidden” token with her usual figurine.<p style='color:blue;'><i>Clarifications:<ul style='color:blue;'><li>Alice can remain hidden for a full turn if it's her only action.</li><li>The M.A.C. cards Punishment, Panic and Rewind never affect her, even if she enters the M.A.C. Room.</p></li></ul></i></p><br><h2><b>>> immunity to robots (android)</b></h2>Alice is secretly an android. Even when she is not hidden, she may choose not to be pushed by a robot."
+    },
+    {
+      "id": 2,
+      "name": "Bruce",
+      "image": "images/characters/bruce.png",
+      "ability_image": "images/abilities/bruce.png",
+      "ability_name": "Mimic",
+      "ability_description": "<p style='color:violet;'><i>At the beginning of the game, Bruce receives an empty room and his \"hidden\" token (with a plastic base).</i></p><br>Bruce can use part of the Special Ability of another character who is orthagonally adjacent or in the same room as him. Because of this, he will sometimes have several options. If one option is unusable, he MUST choose another.<p>Here are the effects Bruce can use when imitating another character:<ul><li><b>Jennifer:</b> Bruce mimics the effect of the Call ability. If this effect is used on Jennifer, she can choose not to move. Regardless of her decision, the action is still used.</li><li><b>Franck:</b> Bruce can mimic Franck’s Recover ability only if Franck is in the same room as Bruce.</li><li><b>Max:</b> Bruce can use Max’s Carry ability. However, Max cannot be carried.</li><li><b>Kevin:</b> Bruce can only use Kevin’s Hack a Robot ability. He cannot Hack the Complex.</li><li><b>Emmett:</b> Bruce can only mimic Emmett’s Reactivate ability. He cannot place Locks.</li><li><b>Alice:</b> Bruce imitates Alice’s Be Hidden ability. He remains visible to Alice, who can push him.</li><li><b>Sarah:</b> Bruce can only imitate Sarah’s Sabotage A Room ability once (using the empty room he received at the beginning of the game). He cannot Sabotage a Robot.</li></ul><br><p style='color: blue;'><i>Clarifications:<ul style='color:blue;'><li>Mimic has no effect if there is no character nearby when it is time to resolve this action. If multiple characters are nearby, Bruce may choose which special ability to mimic</li><li>Bruce does not have the immunities of other characters such as “Android” or “Pin”</li></ul></i></p>"
+    },
+    {
+      "id": 3,
+      "name": "Emmett",
+      "image": "images/characters/emmett.png",
+      "ability_image": "images/abilities/emmett.png",
+      "ability_name": "2 Abilities",
+      "ability_description": "<p style='color:violet;'><i>At the beginning of the game, Emmett receives two <b>Lock</b> tokens.</i></p><br>Emmet has two special abilities (which are programmed with the same token). He makes his choice when revealing the action. If either of his abilities are not playable when it is time to resolve, he must use the other ability.<h2>REACTIVATE</h2>Remove the 'Do Not Cross' token from an adjacent room if it is not occupied. This room is then turned face-down.<h2>LOCK ON</h2>Place a Lock token on an adjacent visible non-Blue room. As long as the lock remains in place, the room is inaccessible to everyone other than Robots or Emmett himself. A character in a locked room can leave (voluntarily or by force) or push someone else outside.<p style='color:blue;'><ul><li>If the two Lock tokens are already installed in rooms and the lock action is performed again, Emmett decides from which room a lock token is moved, regardless of the character doing the locking.</li><li>You cannot put two locks on the same room.</li><li>If Emmett is eliminated, all Lock tokens are removed from the complex (even those due to the M.A.C. Lock card).</li></ul></p><h2><b>>> immunity to locks (PIN)</b></h2>Emmett is able to enter rooms which are closed with a “Lock” token. He can also be called or pushed by another character. He cannot enter inaccessible rooms (rooms with the “Do Not Cross” token)."
+    },
+    {
+      "id": 4,
+      "name": "Franck",
+      "image": "images/characters/franck.png",
+      "ability_image": "images/abilities/franck.png",
+      "ability_name": "Recover",
+      "ability_description": "Recover your Adrenaline token If you no longer have it. You can program it at next turn.<br><p style='color:blue;'><i>Clarification: This ability has no effect if you still have your Adrenaline.</i></p>"
+    },
+    {
+      "id": 5,
+      "name": "Jennifer",
+      "image": "images/characters/jennifer.png",
+      "ability_image": "images/abilities/jennifer.png",
+      "ability_name": "Call",
+      "ability_description": "Move an adjacent character of your choice immediately into the room you occupy. The character called is affected by the room.<p style='color:blue;'><i>Clarifications:<ul style='color:blue;'><li>Jennifer cannot call someone into a Flooded Chamber.</li><li>Jennifer cannot call someone into a locked room (see Emmett’s special ability).</li><li>If Jennifer calls someone into the Acid Bath, it is she who is eliminated.</li><li>A robot or a hidden character (Alice or Bruce) cannot be called.</li></ul></i></p>"
+    },
+    {
+      "id": 6,
+      "name": "Kevin",
+      "image": "images/characters/kevin.png",
+      "ability_image": "images/abilities/kevin.png",
+      "ability_name": "2 Abilities",
+      "ability_description": "Kevin has two Special Abilities (with are programmed with the same token). He makes his choice when programming the action. If either of the ability is not playable at the time it is resolved, the other must be applied.<h2>HACK THE COMPLEX</h2>Swap two non-blue rooms which are adjacent to the room occupied by Kevin, whether they are occupied or not.<h2>HACK A ROBOT</h2>mmediately give a MOVE or PUSH order to a robot somewhere in the complex. If there are no robots in play, this ability is useless."
+    },
+    {
+      "id": 7,
+      "name": "Max",
+      "image": "images/characters/max.png",
+      "ability_image": "images/abilities/max.png",
+      "ability_name": "Carry",
+      "ability_description": "Move another character present in Max’s room together with Max. Max and the carried character are both affected by their destination room in an identical and unique way. If the room requires a choice to be made, Max makes that choice. For example, the same room is looked at when arriving in the Vision Chamber, the Moving Chamber is only moved once, the Control Chamber only moves one line, both characters move to the same Tunnel Chamber and both characters are eliminated in the Mortal Chamber. When arriving in an Acid Bath, Max decides which character is eliminated.<br><p style='color: blue;'><i>Clarifications:<ul style='color:blue;'><li>With this Special Ability, both characters can survive by leaving the Shredder Room together.</li><li>The Carry action is lost if no one is in the room when the action is revealed.</li><li>A robot cannot be carried.</li></ul></i></p>"
+    },
+    {
+      "id": 8,
+      "name": "Sarah",
+      "image": "images/characters/sarah.png",
+      "ability_image": "images/abilities/sarah.png",
+      "ability_name": "2 Abilities",
+      "ability_description": "<p style='color:violet;'><i>At the beginning of the game, Sarah receives two empty rooms.</i></p><p>Sarah has two Special Abilities (which are programmed using the same token). She makes her choice when revealing the action. If either of the abilities is not playable at the time it is resolved, then she must apply the other.</p><p><h2>SABOTAGE A ROOM</h2>Replace the non-Blue room she occupies with one of her empty rooms. The replaced room is discarded. Sarah can sabotage up to 2 rooms per game.</p><p style='color:blue;'><i>Clarifications:<ul style='color:blue;'><li>If Sarah is in a blue room, sabotage does not work.</li><li>Sarah can sabotage a Trapped room that she entered with the previous action. If she does this, she does not die.</li><li>Sabotaging a Robot Room does not destroy the robot, but does keep a new robot from entering play if the previous one is destroyed.</li><li>If Sarah sabotages an Empty Room, she still loses one of her Empty Rooms.</li></ul></i></p><p><h2>SABOTAGE A ROBOT</h2>Sarah destroys a robot present in her current room. If there is not a robot in her room, she must sabotage the room instead (see above).</p>"
+    }
+  ]
+  

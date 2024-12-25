@@ -1,0 +1,23 @@
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 20px;
+}
+
+.card-thumbnail {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.2s
+}
+
+.card-thumbnail img {
+    width: 100%;
+    display: block;
+}
+
+.card-thumbnail:hover {
+    transform: scale(1.05);
+}

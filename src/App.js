@@ -1,88 +1,83 @@
-import React, {Component} from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Header from './Components/layout/Header';
-import Projects from './Components/Projects';
-import AddProject from './Components/AddProject';
-import About from './Components/pages/About';
-import uuid from 'uuid';
-import axios from 'axios';
+import React, { useState } from 'react';
+import CardList from './CardList';
+import CardDetail from './CardDetail';
+import BurgerMenu from './BurgerMenu';
+import './App.css';
+import rooms from './rooms_compe_2025.json';
+import characters from './characters.json';
 
-//function App() {
-class App extends Component {
-  state = {
-    projects: []
+//const cards = [];
+
+function App() {
+  const [selectedCard, setSelectedCard] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [currentScreen, setCurrentScreen] = useState('rooms');
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleCardClick = (card) => {
+    setSelectedCard(card);
+    setModalOpen(true);
+  };
+
+  const closeDetail = () => {
+    setSelectedCard(null);
+    setModalOpen(false);
   }
 
-  componentDidMount(){
-    this.setState({ projects: require('./resources/projects.json')});
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   }
 
-  // Toggle Ready
-  markReady = (id) => {
-    this.setState({ projects: this.state.projects.map(y => {
-      if (y.id === id) {
-        y.ready = !y.ready
-      }
-      return y;
-    }) });
+  const handleNavigate = (screen) => {
+    setCurrentScreen(screen);
+    setMenuOpen(false);
   }
 
-  // Delete Project
-  delProject = (id) => {
-    this.setState({ projects: [...this.state.projects.filter(y => y.id !== id)] });
-  }
+  const data = currentScreen === 'rooms' ? rooms : characters;
 
-  // Add Project
-  addProject = (title) => {
-    const newProject = {
-      id: uuid.v4(),
-      title: title,
-      ready: true
-    }
-    this.setState({ projects: [...this.state.projects, newProject] })
-  }
+  return (
+    <div className='App'>
+        {/* Burger Icon */}
+        {!modalOpen && (
+            <button className='burger-icon' onClick={toggleMenu}>
+                ☰
+            </button>
+        )}
 
-  render() {
-    //console.log(this.state.projs)
-    return (
-      <Router>
-        <div className="App">
-          <div className="container">
-            <Header />
-            <Route exact path="/" render={props => (
-              <React.Fragment>
-                <AddProject addProject={this.addProject}/>
-                <div className="row flexbox">
-                  <Projects projects={this.state.projects} markReady={this.markReady} delProject={this.delProject}/>    
+        {/* Burger Menu */}
+        <BurgerMenu
+            isOpen={menuOpen}
+            onClose={toggleMenu}
+            onNavigate={handleNavigate}
+        />
+
+        {/* Main Content */}
+        <h1>{currentScreen === 'rooms' ? "Rooms" : "Characters"}</h1>
+        {currentScreen === 'rooms' ? (
+            // Grouped by color for Rooms
+            Object.keys(
+                data.reduce((acc, card) => {
+                    if (!acc[card.color]) acc[card.color] = [];
+                    acc[card.color].push(card);
+                    return acc;
+                }, {})
+            ).map((color) => (
+                <div key={color} className='color-section'>
+                    <h2>{color}</h2>
+                    <CardList
+                        cards={data.filter((card) => card.color === color)}
+                        onCardClick={handleCardClick}
+                    />
                 </div>
-              </React.Fragment>
-            )} />
-            <Route path="/about" component={About} />
-          </div>        
-        </div>
-      </Router>
-    );
-  }
+            ))
+        ) : (
+            // Flat list for Characters
+            <CardList cards={data} onCardClick={handleCardClick} />
+        )}
+
+        {selectedCard && <CardDetail card={selectedCard} onClose={closeDetail} />}
+    </div>
+  );
 }
 
 export default App;
-
-/* 
-{
-  id: uuid.v4(),
-  title: 'Randolph',
-  logo: 'none',
-  ready: false
-},
-{
-  id: uuid.v4(),
-  title: 'Dreamquest',
-  logo: 'none',
-  ready: false
-},
-{
-  id: uuid.v4(),
-  title: 'Elements',
-  logo: 'none',
-  ready: false
-} */
